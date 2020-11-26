@@ -1,0 +1,39 @@
+/*#include<stdio.h>
+  struct student
+    {
+        char name[25];
+        int age;
+        int sem;
+    };
+int main()
+{
+  
+    struct student s;
+    int *c;
+	strcpy(s.name , "Sam");
+    s.age = 18;
+	s.sem=2;
+	c=&s.age;
+	*c++;
+    printf("%s %d %d %d\n", s.name, s.age,s.sem,*c);
+    return 0;
+}*/
+#include<stdio.h>
+
+int main()
+{
+    struct emp
+    {
+        char name[25];
+        int age;
+        float sal;
+    };
+    struct emp e[2];
+    int i=0;
+    for(i=0; i<2; i++)
+        scanf("%s %d %f", e[i].name, &e[i].age, &e[i].sal);
+
+    for(i=0; i<2; i++)
+	printf("%s %d %f", e[i].name, e[i].age, e[i].sal);
+    return 0;
+}

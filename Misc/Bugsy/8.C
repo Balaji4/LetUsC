@@ -1,0 +1,11 @@
+#include<stdio.h>
+
+int main()
+{
+    printf("%d >> %d %d >> %d\n", 4 >> 1, 8 >> 1);
+    return 0;
+}
+/*4 1 8 1
+4 >> 1 8 >> 1
+2 >> 4 Garbage value >> Garbage value
+8 >> 16 Garbage value >> Garbage value  */

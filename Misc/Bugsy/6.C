@@ -1,0 +1,37 @@
+/*#include<stdio.h>
+struct n
+{
+int a;
+int b;
+};
+void main()
+{
+int c;
+struct n n,m;
+clrscr();
+n.a=10;
+m.b=30;
+c=n.a+m.b;
+printf("%d",c);
+getch();
+} */
+#include<stdio.h>
+#include<conio.h>
+struct
+{
+int a;
+int b;
+}n,m;
+void main()
+{
+int *c;
+clrscr();
+c=&n.a;
+
+n.a=10;
+m.b=30;
+*c+=2;
+printf("%d %d %d",n.a,m.b,*c);
+getch();
+}
+

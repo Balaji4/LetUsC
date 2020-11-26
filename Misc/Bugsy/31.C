@@ -1,0 +1,9 @@
+#include<stdio.h>
+#define printf(c) printf("%d",c);
+void main()
+{
+int c=10;
+printf("%d",c);
+printf(4);
+printf(c);
+}

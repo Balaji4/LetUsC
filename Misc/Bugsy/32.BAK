@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int i, j;
+    int a = 2, b = 4;
+     randomize();
+     clrscr();
+    for(i = 0, j = 0; i < a, j < b; i++, j++)
+    {
+      printf("1CSI Bugsy 2013\n");
+    }
+	 for(i = 0, j = 0; (i < a)&& (j < b); i++, j++)
+    {
+      printf("2CSI Bugsy 2013\n");
+    }
+    printf("%d",1+rand()%10);
+      getch();
+    return 0;
+}

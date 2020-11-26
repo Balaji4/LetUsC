@@ -1,0 +1,81 @@
+#include<stdio.h>
+#include<stdlib.h>
+unsigned long long factorial(int  n)
+{
+unsigned long long r=1;
+int i;
+if(n<=1)
+{
+return 1;
+}
+else {
+ for(i=n;i>=2;i--)
+ {
+ r=r*i;
+ }
+ return r;
+
+}
+}
+ int zero(char b[])
+{
+ int i=0,z=0;
+for(i=0;b[i]!='\0';i++)
+{
+}
+i--;
+for(;i>=0;i--)
+{
+ if(b[i]==48)
+ {
+ z++;
+ continue;
+ }
+ else
+ {
+ break;
+ }
+}
+return z;
+}
+
+
+
+int main()
+{
+
+int n,z=0;
+unsigned long f=1L;
+char a[30]={'\0'};
+clrscr();
+printf("\n enter n\n");
+scanf("%d",&n);
+f=factorial(n);
+ltoa(f,a,10);
+z=zero(a);
+printf("\n factorial=%llu a=%s trial zeros=%d %d",f,a,z,sizeof(unsigned long long));
+getch();
+return 0;
+}
+/*int main()
+{
+int n,f,t,z,five=0,two=0;
+clrscr();
+printf("\n enter n\n");
+scanf("%d",&n);
+t=f=n;
+while((t>=1))
+{
+t=t%2;
+two++;
+}
+while(f>=4)
+{
+f=f/5;
+five++;
+}
+z=(t<f?t:f);
+printf("\n zero=%d",z);
+getch();
+return 1;
+}*/

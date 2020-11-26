@@ -1,0 +1,11 @@
+#include<stdio.h>
+void main()
+{
+float b=10.2;
+int a,c;
+a=(int)b;
+c=(int)(b);
+clrscr();
+printf("%d %f %d",a,b,c);
+getch();
+}
